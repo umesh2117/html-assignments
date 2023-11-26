@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+           <legend>Aadhar Registration Form</legend>
+        <label for="name">1.Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enteryourname" pattern="[a-z]{5}" required>
+        <br>
+        <br>
+        <label for="number">2.Number:</label>
+        <input type="text" name="number" id="number" placeholder="Enteryournumber"  pattern="[0-9]{10}" required>
+        <br>
+        <br>
+        <label for="age">3.Age:</label>
+        <input type="number" name="age" id="age" placeholder="age" min="18" max="24" required>
+        <br>
+        <br>
+        <label for="dob">4.Date Of Birth</label>
+        <input type="date" name="dod" id="dod" placeholder="dob" min="2001" max="2006" required>
+        <br>
+        <br>
+        <label for="gender">5.select your gender:</label>
+        <br>
+        <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">female</label>
+        <br>
+        <br>
+        <label for="aadhar">6.Select your aadhar card type:</label>
+        <select name="cardtype" id="cardtype">
+            <option value="normal">normal</option>
+            <option value="masked">masked</option>
+        </select>
+        <br>
+        <br>
+        <label for="payment">7.Choose your payment method:</label>
+        <input list="payment" name="payment">
+        <datalist id="payment">
+            <option value="phonepe">phonepe</option>
+            <option value="googlepay">googlepay</option>
+            <option value="internetbanking">internetbanking</option>
+        </datalist>
+        <br>
+        <br>
+        <label for="comments">8.Comments</label>
+        <br>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button formaction="succesfull.html">submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

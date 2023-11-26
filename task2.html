@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Registration Form </legend>
+            <label for="name">1.Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" pattern="[A-Z]{5,9}" required>
+            <br>
+            <br>
+            <label for="Number">2.Mobile Number</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Number" pattern="[0-9]{10}" required >
+            <br>
+            <br>
+            <label for="age">3.Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter Your Age" min="18" max="23" required>
+            <br>
+            <br>
+            <label for="choose your identity">4.Select Your Identity</label>
+            <select name="identity" id="identity">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+            <br>
+            <br>
+            <label for="payment">5.Choose your payment method</label>
+            <input list="payment" name="payment">
+            <datalist id="payment">
+                <option value="ppay">ppay</option>
+                <option value="gpay">gpay</option>
+                <option value="netbank">netbank</option> 
+            </datalist>
+            <br>
+            <br>
+            <label for="comments">6.Comments:</label>
+            <br>
+            <br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="dob">7.Date of Birth</label>
+            <input type="date" name="dob" id="dob" min="2001-01-01" max="2001-09-17" required>
+            <br>
+            <br>
+            <button formaction="succesfull.html">submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
